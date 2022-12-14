@@ -1,0 +1,11 @@
+http://www.jtech.ua.es/j2ee/2003-2004/modulos/srv/sesion04-apuntes.htm
+
+https://tomcat.apache.org/tomcat-10.0-doc/ssl-howto.html
+
+https://tomcat.apache.org/tomcat-10.0-doc/ssl-howto.html#Configuration
+
+docker run --rm -dit --name tomcat -p127.0.0.1:8080:8080 -p127.0.0.1:8085:8005 \
+-p127.0.0.1:8089:8009 -p127.0.0.1:8443:8443 \
+-v $HOME/tomcatT2/conf:/usr/local/tomcat/conf \
+-v $HOME/tomcatT2/webapps:/usr/local/tomcat/webapps \
+-v $HOME/tomcatT2/logs:/usr/local/tomcat/logs tomcat:10.0
